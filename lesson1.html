@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lesson 1: Introduction to Platform Security</title>
+    <meta name="description" content="Learn the fundamentals of platform security, including concepts, threats, layers, CIA triad, authentication, and risk management." />
+    <meta name="keywords" content="platform security, cybersecurity, CIA triad, authentication, risk management, GDPR" />
+    <meta name="author" content="Group 8 BSIT-2D" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="page-title">
+                <h1><i class="fas fa-door-open"></i> Lesson 1: Introduction to Platform Security</h1>
+                <p>Master the fundamentals of platform security and cybersecurity principles</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav-container" role="navigation" aria-label="Lesson Navigation">
+        <ul class="nav-menu">
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="lessons.html"><i class="fas fa-arrow-left"></i> All Lessons</a></li>
+            <li><a href="lesson2.html"><i class="fas fa-arrow-right"></i> Next Lesson</a></li>
+        </ul>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode" title="Toggle dark/light mode">
+            <i class="fas fa-moon"></i>
+        </button>
+    </nav>
+
+    <main>
+        <div class="container">
+            <article class="lesson-content-full" aria-labelledby="lesson-title">
+                <header class="lesson-header-full">
+                    <span class="lesson-number">1</span>
+                    <h2 id="lesson-title">Introduction to Platform Security</h2>
+                </header>
+
+                <section class="lesson-section" aria-labelledby="objectives-title">
+                    <h3 id="objectives-title"><i class="fas fa-bullseye"></i> Learning Objectives</h3>
+                    <ul>
+                        <li>Understand the concept and scope of platform security</li>
+                        <li>Recognize the importance and benefits of platform security</li>
+                        <li>Identify common threats to platforms</li>
+                        <li>Understand the layers of platform security</li>
+                        <li>Learn about the CIA triad and its components</li>
+                        <li>Understand authentication methods and privacy laws</li>
+                        <li>Comprehend the risk management process</li>
+                    </ul>
+                </section>
+
+                <section class="lesson-section" aria-labelledby="content-title">
+                    <h3 id="content-title"><i class="fas fa-book-open"></i> Content Overview</h3>
+                    <section class="content-subsection">
+                        <p><strong>Platform Security</strong> refers to the set of strategies, tools, and policies used to protect hardware, operating system, and software environments from cyber threats and unauthorized access. It covers physical devices, virtualization layers, operating systems, applications, and APIs across mobile, cloud, desktop, IoT, and enterprise systems.</p>
+                    </section>
+
+                    <section class="content-subsection">
+                        <h4>Common Threats to Platforms</h4>
+                        <ul>
+                            <li><strong>Malware:</strong> Viruses, worms, trojans, ransomware</li>
+                            <li><strong>Privilege Escalation:</strong> Gaining higher access levels than authorized</li>
+                            <li><strong>Zero-day Exploits:</strong> Unknown vulnerabilities exploited before patches</li>
+                            <li><strong>Rootkits:</strong> Software that hides malicious activity</li>
+                            <li><strong>Firmware Attacks:</strong> Compromising device firmware</li>
+                            <li><strong>Insider Threats:</strong> Authorized users causing harm</li>
+                        </ul>
+                    </section>
+
+                    <section class="content-subsection">
+                        <h4>Layers of Platform Security</h4>
+                        <ol>
+                            <li><strong>Physical Security:</strong> Protecting hardware from unauthorized access</li>
+                            <li><strong>Firmware & Boot Security:</strong> Secure boot processes and firmware integrity</li>
+                            <li><strong>Operating System Security:</strong> OS hardening and access controls</li>
+                            <li><strong>Application Security:</strong> Secure coding and application firewalls</li>
+                            <li><strong>Network Security:</strong> Protecting data in transit</li>
+                            <li><strong>Data Security:</strong> Protecting data at rest and in use</li>
+                        </ol>
+                    </section>
+
+                    <section class="content-subsection">
+                        <h4>The CIA Triad</h4>
+                        <p>The fundamental principles of information security:</p>
+                        <ul>
+                            <li><strong>Confidentiality:</strong> Ensuring information is accessible only to authorized individuals</li>
+                            <li><strong>Integrity:</strong> Maintaining the accuracy and completeness of data</li>
+                            <li><strong>Availability:</strong> Ensuring information is accessible when needed</li>
+                        </ul>
+                    </section>
+
+                    <section class="content-subsection">
+                        <h4>Detailed Confidentiality</h4>
+                        <p>Confidentiality ensures that sensitive information is protected from unauthorized access. This includes:</p>
+                        <ul>
+                            <li><strong>Personally Identifiable Information (PII):</strong> Data that can identify an individual, such as names, addresses, social security numbers, email addresses, and phone numbers.</li>
+                            <li><strong>Protected Health Information (PHI):</strong> Health-related data including medical records, treatment histories, and insurance information, protected under laws like HIPAA.</li>
+                        </ul>
+                        <p>Breaches of confidentiality can lead to identity theft, privacy violations, and legal consequences.</p>
+                    </section>
+
+                    <section class="content-subsection">
+                        <h4>Detailed Integrity</h4>
+                        <p>Integrity ensures the accuracy, completeness, and reliability of data. It prevents unauthorized modifications, including:</p>
+                        <ul>
+                            <li><strong>Data Accuracy:</strong> Information remains correct and unaltered.</li>
+                            <li><strong>Data Completeness:</strong> All necessary data is present and intact.</li>
+                            <li><strong>System Integrity:</strong> Hardware and software function as intended without malicious alterations.</li>
+                        </ul>
+                        <p>Integrity violations can result from malware, accidental changes, or insider threats.</p>
+                    </section>
+
+                    <section class="content-subsection">
+                        <h4>Detailed Availability</h4>
+                        <p>Availability ensures that information and systems are accessible when needed. This includes:</p>
+                        <ul>
+                            <li><strong>System Uptime:</strong> Systems remain operational during required times.</li>
+                            <li><strong>Data Accessibility:</strong> Authorized users can retrieve information promptly.</li>
+                            <li><strong>Disaster Recovery:</strong> Systems can recover from disruptions like power outages or cyberattacks.</li>
+                        </ul>
+                        <p>Availability threats include DDoS attacks, hardware failures, and natural disasters.</p>
+                    </section>
+
+                    <section class="content-subsection">
+                        <h4>Non-Repudiation</h4>
+                        <p>Non-repudiation ensures that a party cannot deny the authenticity of their signature on a message or the sending of a message. It provides proof of:</p>
+                        <ul>
+                            <li><strong>Origin:</strong> The message came from the claimed sender.</li>
+                            <li><strong>Delivery:</strong> The message was received by the intended recipient.</li>
+                            <li><strong>Integrity:</strong> The message was not altered in transit.</li>
+                        </ul>
+                        <p>This is achieved through digital signatures, timestamps, and audit logs.</p>
+                    </section>
+
+                    <section class="content-subsection">
+                        <h4>Threat Actors</h4>
+                        <p>Threat actors are individuals or groups that pose security risks. Common types include:</p>
+                        <ul>
+                            <li><strong>Hackers/Cybercriminals:</strong> Motivated by financial gain, often using malware or social engineering.</li>
+                            <li><strong>Insider Threats:</strong> Authorized users who misuse access, either maliciously or accidentally.</li>
+                            <li><strong>Nation-State Actors:</strong> Government-sponsored groups conducting espionage or sabotage.</li>
+                            <li><strong>Hacktivists:</strong> Individuals or groups promoting political or social causes through cyberattacks.</li>
+                            <li><strong>Script Kiddies:</strong> Amateur hackers using pre-existing tools without deep understanding.</li>
+                        </ul>
+                    </section>
+
+                    <section class="content-subsection">
+                        <h4>Vulnerabilities</h4>
+                        <p>Vulnerabilities are weaknesses in systems, software, or processes that can be exploited by threat actors. Common types include:</p>
+                        <ul>
+                            <li><strong>Software Vulnerabilities:</strong> Bugs, buffer overflows, or insecure coding practices.</li>
+                            <li><strong>Configuration Errors:</strong> Misconfigured servers, permissions, or security settings.</li>
+                            <li><strong>Human Vulnerabilities:</strong> Weak passwords, lack of training, or social engineering susceptibility.</li>
+                            <li><strong>Physical Vulnerabilities:</strong> Unsecured hardware or poor access controls.</li>
+                            <li><strong>Supply Chain Vulnerabilities:</strong> Compromised third-party components or services.</li>
+                        </ul>
+                    </section>
+
+                    <section class="content-subsection">
+                        <h4>Authentication Methods</h4>
+                        <p>Authentication verifies user identity using:</p>
+                        <ul>
+                            <li><strong>Something you know:</strong> Passwords, PINs, security questions</li>
+                            <li><strong>Something you have:</strong> Smart cards, tokens, mobile devices</li>
+                            <li><strong>Something you are:</strong> Biometrics (fingerprint, facial recognition)</li>
+                        </ul>
+                        <p><strong>Multi-factor Authentication (MFA)</strong> combines multiple authentication methods for enhanced security.</p>
+                    </section>
+
+                    <section class="content-subsection">
+                        <h4>Privacy Laws and Regulations</h4>
+                        <ul>
+                            <li><strong>GDPR (General Data Protection Regulation):</strong> EU regulation for data protection</li>
+                            <li><strong>HIPAA (Health Insurance Portability and Accountability Act):</strong> US healthcare data protection</li>
+                            <li><strong>CCPA (California Consumer Privacy Act):</strong> California data privacy law</li>
+                        </ul>
+                    </section>
+
+                    <section class="content-subsection">
+                        <h4>Risk Management Process</h4>
+                        <ol>
+                            <li><strong>Identify:</strong> Recognize potential risks and threats</li>
+                            <li><strong>Assess:</strong> Evaluate likelihood and impact of risks</li>
+                            <li><strong>Treat:</strong> Choose appropriate response (avoid, accept, mitigate, transfer)</li>
+                            <li><strong>Monitor:</strong> Continuously review and update risk management</li>
+                        </ol>
+                    </section>
+                </section>
+
+                <section class="lesson-section" aria-labelledby="resources-title">
+                    <h3 id="resources-title"><i class="fas fa-download"></i> Resources</h3>
+                    <ul>
+                        <li><a href="Lesson-1-Intro-to-Platform-Security.pdf" class="resource-link" target="_blank" aria-label="Download Lesson 1 PDF">
+                            <i class="fas fa-file-pdf"></i> Lesson 1: Introduction to Platform Security (PDF)
+                        </a></li>
+                    </ul>
+                </section>
+
+
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Group 8 - BSIT 2nd Year Students, Camarines Sur Polytechnic Colleges, College of Computer Studies. Platform Security Lessons Website | <i class="fas fa-shield-alt"></i> Delta X Cybersecurity Program</p>
+    </footer>
+    <div id="cyberAnimation" class="cyber-animation"></div>
+    <script src="script.js"></script>
+</body>
+</html>
